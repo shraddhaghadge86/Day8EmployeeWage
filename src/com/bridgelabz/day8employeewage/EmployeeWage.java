@@ -1,6 +1,9 @@
 package com.bridgelabz.day8employeewage;
 
+import java.util.ArrayList;
+
 public class EmployeeWage {
+    static ArrayList<CompanyEmpWage> companyList =  new ArrayList<CompanyEmpWage>();
 
     EmployeeWage(int wagePerHour, int workingHouirsInMonth, int workingDaysInMonth){
         this.wagePerHour = wagePerHour;
