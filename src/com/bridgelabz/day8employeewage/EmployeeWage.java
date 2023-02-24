@@ -12,15 +12,17 @@ public class EmployeeWage {
 
     static final int NUM_DAYS_IN_MONTH = 20;
 
-    public static void main(String[] args) {
+    static void printWelcome(){
         System.out.println("Welcome to Employee + Wage Computation Program");
+    }
 
+    static void getTotalWage(){
         int wage = 0;
         int totalwage = 0;
         int totalHours = 0;
         int totaldays = 1;
 
-        while(totaldays <= 20 && totalHours <= 20){
+        while(totaldays <=20 && totalHours<=20){
             int employeeCheck = (int) Math.floor(Math.random()*10) %3;
             switch(employeeCheck){
                 case FULL_TIME_EMPLOYEE:
@@ -29,7 +31,7 @@ public class EmployeeWage {
                     break;
                 case PART_TIME_EMPLOYEE:
                     wage = PART_TIME_HOUR * WAGE_PER_HOUR;
-                    totalHours += PART_TIME_HOUR;
+                    totalHours+= PART_TIME_HOUR;
                     break;
                 default:
                     wage = 0;
@@ -39,6 +41,12 @@ public class EmployeeWage {
         }
 
         System.out.println(totalwage);
+    }
+
+    public static void main(String[] args) {
+        printWelcome();
+        getTotalWage();
+
     }
 
 }
