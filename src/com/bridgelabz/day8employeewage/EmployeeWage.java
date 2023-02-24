@@ -2,7 +2,6 @@ package com.bridgelabz.day8employeewage;
 
 public class EmployeeWage {
 
-
     EmployeeWage(int wagePerHour, int workingHouirsInMonth, int workingDaysInMonth){
         this.wagePerHour = wagePerHour;
         this.workingHouirsInMonth = workingHouirsInMonth;
@@ -59,5 +58,4 @@ public class EmployeeWage {
         EmployeeWage tcs = new EmployeeWage(900,800, 22);
         tcs.getTotalWage();
     }
-
 }
